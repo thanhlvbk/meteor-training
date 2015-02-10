@@ -1,0 +1,33 @@
+<template name="posts">
+    <div class="container" style="margin: 1em auto 0;width: 700px;font-size: 20px;">
+        <div class="about" style="            
+            margin: 1.5em 2em;
+            line-height: 1.5em;">
+            <h2 style="text-align: center;">Welcome to Blogs</h2>
+            <span>Lorem ipsum dolor sit amet, natum bonorum expetendis usu ut. Eum impetus offendit disputationi eu, at vim aliquip lucilius praesent. Alia laudem antiopam te ius, sed ad munere integre, ubique facete sapientem nam ut.</span>
+        </div>
+        
+        <table class="table table-condensed" style="            
+            border-top: 1px solid #d9d9d9;
+            border-bottom: 1px solid #d9d9d9;
+            padding: 1.5em 0;
+        ">
+            <thead >
+                <tr>
+                    <th><h2>Post</h2></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each posts}}
+                    <tr>
+                      <th><a href="{{pathFor route='post'}}">{{ title }}</a></th>
+                      <td><div class="date">{{ createdAt }}</div></td>
+                    </tr>
+                {{/each}}            
+            </tbody>
+        </table>
+        <a class="btn btn-primary" href="">View All Posts</a>
+
+    </div>
+</template>

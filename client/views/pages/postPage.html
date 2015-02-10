@@ -1,0 +1,11 @@
+<template name="post">
+    <div class="container post" style="margin: 1em auto 0;width: 700px;font-size: 20px;">
+        {{#with post }}
+            <h1>{{ title }}</h1>
+            <div class="date">{{ createdAt }}</div>
+            <div>
+                <p>{{ body }}</p>
+            </div>
+        {{/with}}
+    </div>
+</template>

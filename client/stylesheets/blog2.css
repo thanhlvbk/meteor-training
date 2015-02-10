@@ -1,0 +1,104 @@
+.navbar {
+    line-height: 100px;
+    height: 100px;
+    /*background-color: rgba(0,0,0,0.3);*/
+    background-color: #428bca;
+    display: block;
+    vertical-align: middle;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.container {
+    font-family: "adelle-sans",sans-serif;
+}
+h1 {
+    font-size: 36px;
+    line-height: 30px;
+}
+h1,h2,h3 {
+    font-weight:700;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-style: normal;
+    margin: 0 0 20px 0;
+    color: #222;
+    
+}
+
+a.navbar-brand {
+    font-size: 35px;
+    color: #fff;
+    font-weight: 900;
+    text-shadow: none;
+}
+
+.navbar-brand {
+    padding: 0;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 90px;
+}
+
+.navbar .navbar-collapse {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.navbar-nav {
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.nav li {
+    height: 100%;
+    line-height: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.nav>li>a {
+    display: table-cell;
+    height: 100%;
+    line-height: 100%;
+    vertical-align: middle;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+#login-buttons a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.date {    
+    line-height: 2em;
+    color: silver;
+    font-size: .9em;
+}
+
+table h2 {
+    margin-top: 40px;
+}
+
+.post .date {
+    font-family: palatino,serif;
+    font-style: italic;
+}
+
+.post p{
+    margin: 1.5em 0;
+}
+
+.post h1{
+    margin-bottom: .25em;
+}
+
+.creat-post {
+    margin: 1em auto 0;
+    width: 90%;
+}
