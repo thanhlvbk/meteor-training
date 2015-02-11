@@ -75,6 +75,10 @@ a.navbar-brand {
     color: #fff;
 }
 
+.accounts-dialog a {
+    color: #000 !important;
+}
+
 .date {    
     line-height: 2em;
     color: silver;
@@ -98,7 +102,13 @@ table h2 {
     margin-bottom: .25em;
 }
 
-.creat-post {
+.creat-post, .edit-post {
     margin: 1em auto 0;
     width: 90%;
+}
+
+.tags a{
+    background-color: #f0f0f0;
+    padding: .25em .35em;
+    border-radius: 3px;
 }

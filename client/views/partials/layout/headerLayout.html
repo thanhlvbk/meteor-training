@@ -2,15 +2,17 @@
     <nav class="navbar">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Blogs</a>                
+                <a class="navbar-brand" href="{{pathFor route='main'}}">Blogs</a>                
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right" style="margin-right: 20px">
                     <li><a href="{{pathFor route='main'}}" style="">Home</a></li>
-                    <li class="dropdown" >
+                    {{#if currentUser}}
+                        <li><a class="new-post">New Post</a></li>                    
+                    {{/if}}
+                    <li class="dropdown login" >
                         <a>{{> loginButtons }}</a>
                     </li>
-                    <li><a class="new-post">New Post</a></li>                    
                 </ul>
             </div>
         </div>

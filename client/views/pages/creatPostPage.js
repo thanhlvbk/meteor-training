@@ -6,6 +6,7 @@ Template.creatPost.events({
         var id = PostsCollection.insert({
             title: tmp.find('#inputTitle').value,
             body: tmp.find('#inputContent').value,
+            tags: tmp.find('#inputTags').value.split(","),
             createdAt: moment(Date()).format('MMMM-DD-YYYY')
         });
         Router.go('main');

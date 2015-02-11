@@ -1,0 +1,22 @@
+<template name="editPost">
+    <div class="edit-post">
+        <h2 style="text-align: center;">Edit Post</h2>
+        {{#with post}}
+            <form>
+                <div class="form-group">
+                    <label>Title</label>
+                    <textarea class="form-control" id="inputTitle" placeholder="" rows="1">{{ title }}</textarea>
+                </div>
+                <div class="form-group">
+                    <label>Content</label>
+                    <textarea class="form-control" id="inputContent" placeholder="" rows="6">{{ body }}</textarea>
+                </div>
+                <div class="form-group">
+                    <label>Tags</label>
+                    <textarea class="form-control" id="inputTags" placeholder="" rows="1">{{ tags }}</textarea>
+                </div>
+                <a class="btn btn-primary save-post" href="">Save</a>
+            </form>
+        {{/with}}
+    </div>
+</template>

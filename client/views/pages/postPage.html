@@ -2,10 +2,28 @@
     <div class="container post" style="margin: 1em auto 0;width: 700px;font-size: 20px;">
         {{#with post }}
             <h1>{{ title }}</h1>
-            <div class="date">{{ createdAt }}</div>
+            <div class="row">
+                <div class="col-xs-6 date">{{ createdAt }}</div>
+                <div class="col-xs-6 author">Author: {{ getAuthor }}</div>
+            </div>
             <div>
                 <p>{{ body }}</p>
             </div>
+            <div class="tags" style="
+                float: left;
+                width: 100%;
+                font-size: .75em;
+                margin-bottom: 1em;
+            ">
+                {{#each tags}}
+                    <a href="">{{ this }}</a>
+                {{/each}}
+            </div>
+
+            {{#if currentUser}}
+                <a class="btn btn-primary" href="{{pathFor route='editPost'}}">Edit Post</a>
+                <a class="btn btn-primary delete-post" href="">Delete Post</a>
+            {{/if}}
         {{/with}}
     </div>
 </template>
