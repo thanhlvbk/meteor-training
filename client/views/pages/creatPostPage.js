@@ -1,3 +1,4 @@
+Meteor.subscribe("posts");
 
 Template.creatPost.events({ 
     'click .save-post': function(evt, tmp){

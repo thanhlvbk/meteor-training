@@ -83,3 +83,15 @@ Meteor.publish("delay", function(){
     Fiber.yield();
     this.ready();
 });
+
+Meteor.publish("posts",function(){
+    return PostsCollection.find();
+});
+
+PostsCollection.allow({
+    insert: function (userId, doc) {
+        // the user must be logged in, and the document must be owned by the user
+        return true
+    },
+});
+

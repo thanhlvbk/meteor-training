@@ -15,8 +15,6 @@ fastclick
 http
 launch-screen
 facts
-autopublish
-insecure
 
 iron:router
 alanning:roles
