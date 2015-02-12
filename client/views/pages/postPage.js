@@ -13,10 +13,14 @@ Template.post.helpers({
 });
 
 Template.post.events({
-	'click .delete-post':function(evt, tmp){
-		evt.preventDefault();
-		var remove = PostsCollection.remove(this._id);
-		Router.go('main');
-		return remove;
-	}
+    'click .delete-post':function(evt, tmp){
+        evt.preventDefault();
+        var remove = PostsCollection.remove(this._id);
+        Router.go('main');
+        return remove;
+    },
+    'click .tag': function(evt, tmp){
+        evt.preventDefault();
+        console.log(this);
+    }
 })

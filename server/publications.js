@@ -85,5 +85,11 @@ Meteor.publish("delay", function(){
 });
 
 Meteor.publish("posts",function(){
-    return PostsCollection.find();
+    var cursor = PostsCollection.find();
+    var usersId = [];
+    cursor.forEach(function(doc){
+        usersId.push(doc.userId);
+    });
+    var cursor2 = Users.find({_id: { $in: usersId}});
+    return [cursor, cursor2];
 });

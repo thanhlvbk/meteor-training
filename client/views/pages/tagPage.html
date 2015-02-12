@@ -1,0 +1,22 @@
+<template name="tag">
+	<table class="table table-condensed" style="            
+            border-top: 1px solid #d9d9d9;
+            border-bottom: 1px solid #d9d9d9;
+            padding: 1.5em 0;
+    ">
+        <thead >
+            <tr>
+                <th><h2>Tag:</h2></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each posts}}
+                <tr>
+                    <th><a href="{{pathFor route='post'}}">{{ title }}</a></th>
+                    <td><div class="date">{{ createdAt }}</div></td>
+                </tr>
+            {{/each}}            
+        </tbody>
+    </table>
+</template>

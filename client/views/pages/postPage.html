@@ -1,7 +1,7 @@
 <template name="post">
     <div class="container post" style="margin: 1em auto 0;width: 700px;font-size: 20px;">
         {{#with post }}
-            <h1>{{ title }}</h1>
+            <h2 style="">{{ title }}</h2>
             <div class="row">
                 <div class="col-xs-6 date">{{ createdAt }}</div>
                 <div class="col-xs-6 author">Author: {{ getAuthor }}</div>
@@ -16,7 +16,7 @@
                 margin-bottom: 1em;
             ">
                 {{#each tags}}
-                    <a href="">{{ this }}</a>
+                    <a href="{{pathFor route='tag'}}" class="tag">{{ this }}</a>
                 {{/each}}
             </div>
 

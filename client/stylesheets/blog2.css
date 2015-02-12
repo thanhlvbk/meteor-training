@@ -79,7 +79,7 @@ a.navbar-brand {
     color: #000 !important;
 }
 
-.date {    
+.date, .author {    
     line-height: 2em;
     color: silver;
     font-size: .9em;
@@ -89,7 +89,7 @@ table h2 {
     margin-top: 40px;
 }
 
-.post .date {
+.post .date, .post .author {
     font-family: palatino,serif;
     font-style: italic;
 }
